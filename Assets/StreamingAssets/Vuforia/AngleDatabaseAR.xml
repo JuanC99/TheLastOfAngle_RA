@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="marcador_accion2" size="150.000000 214.013672" />
-    <ImageTarget name="marcador_accion" size="150.000000 214.013672" />
+    <ImageTarget name="marcador_accion_5" size="5.000000 7.133789" />
+    <ImageTarget name="marcador_accion_10" size="10.000000 14.267578" />
+    <ImageTarget name="marcador_accion_15" size="15.000000 21.401367" />
+    <ImageTarget name="marcador_accion_reescalado" size="30.000000 42.802734" />
     <ImageTarget name="marcador_menu" size="150.000000 214.013672" />
+    <ImageTarget name="marcador_accion2" size="150.000000 214.013672" />
   </Tracking>
 </QCARConfig>
