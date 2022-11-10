@@ -12,6 +12,7 @@ public class UICarControls : MonoBehaviour
     public static bool Turbo = false;
 
     [SerializeField] private Slider Slider;
+    [SerializeField] private Transform resetPositionTransform;
     public static float Gear = 0;
 
     private void Update(){
@@ -53,5 +54,10 @@ public class UICarControls : MonoBehaviour
     }
     public void OnPointerDownTurbo(){
         UICarControls.Turbo = true;
+    }
+
+    public void OnPointerDownReset(){
+        this.transform.position = resetPositionTransform.position;
+        this.transform.rotation = resetPositionTransform.rotation;
     }
 }
