@@ -23,7 +23,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private int maxSpeed = 40;
     
     // Ruedas Colliders
-    [SerializeField] private List<WheelCollider> wheelsColliders;
+    public List<WheelCollider> wheelsColliders;
 
     // Ruedas Transforms
     [SerializeField] private List<Transform> wheelsTransforms;

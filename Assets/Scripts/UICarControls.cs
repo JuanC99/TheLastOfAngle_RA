@@ -10,10 +10,18 @@ public class UICarControls : MonoBehaviour
 
     public static bool Brake = false;
     public static bool Turbo = false;
+    public static float Gear = 0;
 
     [SerializeField] private Slider Slider;
     [SerializeField] private Transform resetPositionTransform;
-    public static float Gear = 0;
+
+    private Rigidbody rb;
+    private CarController carController;
+
+    private void Start(){
+        rb = this.GetComponent<Rigidbody>();
+        carController = this.GetComponent<CarController>();
+    }
 
     private void Update(){
         Gear = Slider.value;
@@ -57,7 +65,16 @@ public class UICarControls : MonoBehaviour
     }
 
     public void OnPointerDownReset(){
+        
         this.transform.position = resetPositionTransform.position;
         this.transform.rotation = resetPositionTransform.rotation;
+
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        foreach (WheelCollider w in carController.wheelsColliders)
+        {
+            w.motorTorque = 0;
+        }
     }
 }
