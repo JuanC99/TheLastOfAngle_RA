@@ -1,12 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoundController : MonoBehaviour
 {
+    [Header("Round Settings")]
     [SerializeField] private int maxRounds = 3;
     [SerializeField] private int itemsRemaining = 5;
     [SerializeField] float maxTimePerRound = 60f * 5f; // 5 minutos
+
+
+    [Header("Texts Settings")]
+    [SerializeField] private Text textRounds;
+    [SerializeField] private Text textTimer;
+    [SerializeField] private Text textPieces;
+
+
     float timeToEnd;
     private int currentRound = 1;
     private int currentItemsRemaining = 0;
@@ -24,15 +34,16 @@ public class RoundController : MonoBehaviour
         started = false;
     }
     // Añade un item recogido
-    public void AddItemToInventory()
-    {
-        currentItemsRemaining = currentItemsRemaining + 1;
-    }
+    
 
     void Start()
     {
         timeToEnd = maxTimePerRound;
         currentItemsRemaining = 0;
+
+        textRounds.text = "0 / " + maxRounds.ToString();
+        textTimer.text = "00:00";
+        textPieces.text = "0 / " + itemsRemaining.ToString();
     }
 
     void Update()
@@ -50,10 +61,18 @@ public class RoundController : MonoBehaviour
             TimeLitener();
         }
     }
+
+    public void AddItemToInventory()
+    {
+        currentItemsRemaining = currentItemsRemaining + 1;
+        textPieces.text = currentItemsRemaining.ToString() + " / " + itemsRemaining.ToString();
+    }
+
     // Escucha el timer
     void TimeLitener()
     {
         timeToEnd = timeToEnd - Time.time;
+        textTimer.text = timeToEnd.ToString();
         if (timeToEnd <= 0)
         {
             GameLost();
@@ -75,6 +94,7 @@ public class RoundController : MonoBehaviour
     {
         ResetRound();
         currentRound = currentRound + 1;
+        textRounds.text = currentRound.ToString() + " / " + maxRounds.ToString();
     }
 
     // Resetea la ronda
