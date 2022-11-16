@@ -5922,7 +5922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 387, y: -130}
+  m_AnchoredPosition: {x: 144, y: -130}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &211192683
@@ -5969,21 +5969,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 500179633}
-        m_TargetAssemblyTypeName: controlPiezas, Assembly-CSharp
-        m_MethodName: destruirPieza
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1238903356}
         m_TargetAssemblyTypeName: RoundController, Assembly-CSharp
-        m_MethodName: AddItemToInventory
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6462,7 +6450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 382, y: 168}
+  m_AnchoredPosition: {x: 147, y: 168}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310084934
@@ -6819,7 +6807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &363922305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7179,8 +7167,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490355440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26017, y: 0.00793, z: 0.25751}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.26016235, y: 0.00793, z: 0.25751}
   m_LocalScale: {x: 0.20700277, y: 0.20700277, z: 0.20700277}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7190,7 +7178,7 @@ Transform:
   - {fileID: 1819326772}
   - {fileID: 1238903355}
   m_Father: {fileID: 1699395225}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500179625
 GameObject:
@@ -8194,7 +8182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 168}
+  m_AnchoredPosition: {x: -60, y: 168}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697248142
@@ -8552,7 +8540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774581838}
   m_LocalRotation: {x: 0.7071067, y: -0, z: -0, w: 0.7071069}
-  m_LocalPosition: {x: 0, y: 0.3, z: -0}
+  m_LocalPosition: {x: 0, y: 0.3, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8627,9 +8615,9 @@ MonoBehaviour:
   distRange1: 1
   distRange2: 2
   distRange3: 3
-  speedRange1: 1
-  speedRange2: 2
-  speedRange3: 3
+  speedRange1: 0.8
+  speedRange2: 0.4
+  speedRange3: 0.1
   colorRange1: {r: 0.9056604, g: 0.22556068, b: 0.22556068, a: 1}
   colorRange2: {r: 0.8962264, g: 0.89239067, b: 0.240121, a: 1}
   colorRange3: {r: 0.38713354, g: 0.8679245, b: 0.21616231, a: 1}
@@ -14636,7 +14624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036456515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 324.37915, y: 313.19135, z: 116.67191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15275,7 +15263,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218457744}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b771ea420203067408d8d1882d8a7157, type: 3}
   m_Name: 
@@ -15284,10 +15272,10 @@ MonoBehaviour:
   numeroDePiezasAGenerar: 10
   distanciaMinimaAlVehiculo: 5
   distanciaMinimaEntrePiezas: 5
-  vehiculo: {fileID: 0}
+  vehiculo: {fileID: 500179625}
   posInicialVehiculo: {x: 0, y: 0, z: 0}
   radio: 10
-  terreno: {fileID: 0}
+  terreno: {fileID: 358577452}
 --- !u!1 &1238903354
 GameObject:
   m_ObjectHideFlags: 0
@@ -20611,6 +20599,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363581826}
   m_CullTransparentMesh: 1
+--- !u!1 &1403837054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403837057}
+  - component: {fileID: 1403837056}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &1403837056
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403837054}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1403837057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403837054}
+  m_LocalRotation: {x: 0.39751473, y: -0, z: -0, w: 0.9175958}
+  m_LocalPosition: {x: 371.78, y: 10.8, z: -13.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 46.846, y: 0, z: 0}
 --- !u!1 &1447264097
 GameObject:
   m_ObjectHideFlags: 0

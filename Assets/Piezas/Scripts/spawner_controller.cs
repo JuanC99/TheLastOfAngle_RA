@@ -36,7 +36,7 @@ public class spawner_controller : MonoBehaviour
         //Debug.Log("Borde X : " + bordeX);
         //Debug.Log("Borde Z : " + bordeZ);
 
-        //instanciamos la lista que guardará las posiciones donde hay objetos
+        //instanciamos la lista que guardarï¿½ las posiciones donde hay objetos
         listaPosicionesGeneradas = new List<Vector3>();
 
         //llamamos al metodo para generar las piezas
@@ -65,7 +65,7 @@ public class spawner_controller : MonoBehaviour
                     }
                     if (estaLejosDeOtrasPiezas && Vector3.Distance(posInicialVehiculo, randomPosition) > distanciaMinimaAlVehiculo && Mathf.Abs(randomPosition.x) < bordeX && Mathf.Abs(randomPosition.z) < bordeZ)
                     {
-                    //si pasa todas las comprobaciones se añade
+                    //si pasa todas las comprobaciones se aï¿½ade
                         Instantiate(pieza, randomPosition, Quaternion.identity);
                         contadorPiezasGeneradas++;
                         listaPosicionesGeneradas.Add(randomPosition);

@@ -21,29 +21,17 @@ public class RoundController : MonoBehaviour
     private int currentRound = 1;
     private int currentItemsRemaining = 0;
 
-    private bool started = false;
+    private bool started = true;
 
-    // Boton para empezar la partida
-    public void StartGame()
-    {
-        started = true;
-    }
-    // Boton para terminar la partida
-    public void FinishGame()
-    {
-        started = false;
-    }
-    // Añade un item recogido
     
-
     void Start()
     {
         timeToEnd = maxTimePerRound;
         currentItemsRemaining = 0;
 
-        textRounds.text = "0 / " + maxRounds.ToString();
+        textRounds.text = "Ronda 0 / " + maxRounds.ToString();
         textTimer.text = "00:00";
-        textPieces.text = "0 / " + itemsRemaining.ToString();
+        textPieces.text = "0 / " + itemsRemaining.ToString() + " Piezas";
     }
 
     void Update()
@@ -62,16 +50,30 @@ public class RoundController : MonoBehaviour
         }
     }
 
+    // Boton para empezar la partida
+    public void StartGame()
+    {
+        started = true;
+    }
+    // Boton para terminar la partida
+    public void FinishGame()
+    {
+        started = false;
+    }
+    // Añade un item recogido
+    
+
+
     public void AddItemToInventory()
     {
         currentItemsRemaining = currentItemsRemaining + 1;
-        textPieces.text = currentItemsRemaining.ToString() + " / " + itemsRemaining.ToString();
+        textPieces.text = currentItemsRemaining.ToString() + " / " + itemsRemaining.ToString() + " Piezas";
     }
 
     // Escucha el timer
     void TimeLitener()
     {
-        timeToEnd = timeToEnd - Time.time;
+        timeToEnd = timeToEnd - Time.deltaTime;
         textTimer.text = timeToEnd.ToString();
         if (timeToEnd <= 0)
         {
@@ -94,7 +96,7 @@ public class RoundController : MonoBehaviour
     {
         ResetRound();
         currentRound = currentRound + 1;
-        textRounds.text = currentRound.ToString() + " / " + maxRounds.ToString();
+        textRounds.text = "Ronda " + currentRound.ToString() + " / " + maxRounds.ToString();
     }
 
     // Resetea la ronda
