@@ -23,7 +23,8 @@ public class wormLogic : MonoBehaviour
     public List<Transform> navigationPoints;
     public Transform goal;
     NavMeshAgent agent;
-
+    [SerializeField] RoundController roundController;
+    public bool startedGame = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,17 +35,33 @@ public class wormLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!agent.pathPending)
-        {
-            if (agent.remainingDistance <= agent.stoppingDistance)
+        if (startedGame)
+            if (!agent.pathPending)
             {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                if (agent.remainingDistance <= agent.stoppingDistance)
                 {
-                    // Done
-                    navigationPoints.Shuffle();
-                    agent.destination = navigationPoints[0].position;
+                    if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                    {
+                        // Done
+                        navigationPoints.Shuffle();
+                        agent.destination = navigationPoints[0].position;
+                    }
                 }
             }
+            else
+                ;
+        else
+            transform.position = goal.position;
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.tag);
+        if (other.tag == "Player")
+        {
+            roundController.GameLostByWorm();
         }
     }
 

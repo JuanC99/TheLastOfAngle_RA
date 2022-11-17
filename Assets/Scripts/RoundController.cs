@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class RoundController : MonoBehaviour
 {
+    [SerializeField] private wormLogic wormLogic;
+
     [Header("Round Settings")]
     [SerializeField] private int maxRounds = 3;
     [SerializeField] private int itemsRemaining = 5;
@@ -16,19 +18,30 @@ public class RoundController : MonoBehaviour
     [SerializeField] private Text textTimer;
     [SerializeField] private Text textPieces;
 
+    [Header("Pantallas Settings")]
+    [SerializeField] private GameObject screenDeath;
+    [SerializeField] private GameObject screenGameCompleted;
+
 
     float timeToEnd;
     private int currentRound = 1;
     private int currentItemsRemaining = 0;
 
-    private bool started = true;
+    private bool started = false;
+    private bool gameCompleted = false;
 
-    
+
     void Start()
+    {
+        ResetGame();
+    }
+    private void ResetGame()
     {
         timeToEnd = maxTimePerRound;
         currentItemsRemaining = 0;
-
+        gameCompleted = false;
+        started = false;
+        wormLogic.startedGame = false;
         textRounds.text = "Ronda 0 / " + maxRounds.ToString();
         textTimer.text = "00:00";
         textPieces.text = "0 / " + itemsRemaining.ToString() + " Piezas";
@@ -36,7 +49,7 @@ public class RoundController : MonoBehaviour
 
     void Update()
     {
-        if (started)
+        if (started && !gameCompleted)
         {
             RoundListener();
             Finish();
@@ -44,7 +57,7 @@ public class RoundController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (started)
+        if (started && !gameCompleted)
         {
             TimeLitener();
         }
@@ -53,16 +66,16 @@ public class RoundController : MonoBehaviour
     // Boton para empezar la partida
     public void StartGame()
     {
+        ResetGame();
         started = true;
+        wormLogic.startedGame = true;
     }
     // Boton para terminar la partida
     public void FinishGame()
     {
         started = false;
+        wormLogic.startedGame = false;
     }
-    // Añade un item recogido
-    
-
 
     public void AddItemToInventory()
     {
@@ -77,7 +90,8 @@ public class RoundController : MonoBehaviour
         textTimer.text = timeToEnd.ToString();
         if (timeToEnd <= 0)
         {
-            GameLost();
+            ResetGame();
+            screenDeath.SetActive(true);
         }
     }
 
@@ -87,6 +101,7 @@ public class RoundController : MonoBehaviour
 
         if (currentItemsRemaining == itemsRemaining)
         {
+            ResetRound();
             ChangeRound();
         }
     }
@@ -94,7 +109,6 @@ public class RoundController : MonoBehaviour
     // Cambia la ronda
     private void ChangeRound()
     {
-        ResetRound();
         currentRound = currentRound + 1;
         textRounds.text = "Ronda " + currentRound.ToString() + " / " + maxRounds.ToString();
     }
@@ -103,7 +117,7 @@ public class RoundController : MonoBehaviour
     private void ResetRound()
     {
         timeToEnd = maxTimePerRound;
-        currentItemsRemaining = itemsRemaining;
+        currentItemsRemaining = 0;
     }
 
     // termina la partida
@@ -112,16 +126,16 @@ public class RoundController : MonoBehaviour
         if (currentRound > 3)
         {
             started = false;
-            Debug.Log("GameCompleted");
+            wormLogic.startedGame = false;
+            gameCompleted = true;
+            screenGameCompleted.SetActive(true);
         }
     }
 
-    // Has perdido
-    private void GameLost()
+    public void GameLostByWorm()
     {
-        started = false;
-        Debug.Log("GameCompleted");
+        ResetGame();
+        screenDeath.SetActive(true);
     }
-
 
 }
