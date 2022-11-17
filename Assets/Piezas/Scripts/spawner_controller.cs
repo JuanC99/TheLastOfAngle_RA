@@ -40,54 +40,55 @@ public class spawner_controller : MonoBehaviour
         listaPosicionesGeneradas = new List<Vector3>();
 
         //llamamos al metodo para generar las piezas
-        generarPiezas(numeroDePiezasAGenerar, distanciaMinimaAlVehiculo, distanciaMinimaEntrePiezas, mr.bounds.center, radio);
+        Instantiate(pieza, new Vector3(posInicialVehiculo.x + 5, posInicialVehiculo.y, posInicialVehiculo.z  + 5), Quaternion.identity);
+        // generarPiezas(1 , 1, 1, mr.bounds.center, radio);
     }
 
-    public void generarPiezas(int numeroAGenerar,float distanciaMinimaAlVehiculo,float distanciaMinimaEntrePiezas,Vector3 origen,float radioMaximo)
+    public void generarPiezas(int numeroAGenerar, float distanciaMinimaAlVehiculo, float distanciaMinimaEntrePiezas, Vector3 origen, float radioMaximo)
     {
         int contadorPiezasGeneradas = 0;
-        while(contadorPiezasGeneradas < numeroAGenerar)//comprobamos si ya se han generado todas
+        while (contadorPiezasGeneradas < numeroAGenerar)//comprobamos si ya se han generado todas
         {
             Vector3 randomPosition = origen + Random.insideUnitSphere * radioMaximo;//creamos una coordenada random
             randomPosition.y = 0;
-            
-            
-            
-                if(contadorPiezasGeneradas != 0)//comprobamos que no sea la primera
+
+
+
+            if (contadorPiezasGeneradas != 0)//comprobamos que no sea la primera
+            {
+                bool estaLejosDeOtrasPiezas = true;
+                foreach (Vector3 pos in listaPosicionesGeneradas)//recorremos la lista de posiciones
                 {
-                    bool estaLejosDeOtrasPiezas = true;
-                    foreach (Vector3 pos in listaPosicionesGeneradas)//recorremos la lista de posiciones
+                    if (Vector3.Distance(pos, randomPosition) < distanciaMinimaEntrePiezas)//si no esta a la distancia minima de otras piezas no se genera
                     {
-                        if(Vector3.Distance(pos,randomPosition) < distanciaMinimaEntrePiezas)//si no esta a la distancia minima de otras piezas no se genera
-                        {
-                            estaLejosDeOtrasPiezas = false;
-                        }
+                        estaLejosDeOtrasPiezas = false;
                     }
-                    if (estaLejosDeOtrasPiezas && Vector3.Distance(posInicialVehiculo, randomPosition) > distanciaMinimaAlVehiculo && Mathf.Abs(randomPosition.x) < bordeX && Mathf.Abs(randomPosition.z) < bordeZ)
-                    {
+                }
+                if (estaLejosDeOtrasPiezas && Vector3.Distance(posInicialVehiculo, randomPosition) > distanciaMinimaAlVehiculo && Mathf.Abs(randomPosition.x) < bordeX && Mathf.Abs(randomPosition.z) < bordeZ)
+                {
                     //si pasa todas las comprobaciones se a�ade
-                        Instantiate(pieza, randomPosition, Quaternion.identity);
-                        contadorPiezasGeneradas++;
-                        listaPosicionesGeneradas.Add(randomPosition);
-                    }
-                    
+                    Instantiate(pieza, randomPosition, Quaternion.identity);
+                    contadorPiezasGeneradas++;
+                    listaPosicionesGeneradas.Add(randomPosition);
                 }
-                else
+
+            }
+            else
+            {
+                //si es la primera
+                //comprobamos si esta a la distancia minima del vehiculo y si esta dentro del plano
+                if (Vector3.Distance(posInicialVehiculo, randomPosition) > distanciaMinimaAlVehiculo && Mathf.Abs(randomPosition.x) < bordeX && Mathf.Abs(randomPosition.z) < bordeZ)
                 {
-                    //si es la primera
-                    //comprobamos si esta a la distancia minima del vehiculo y si esta dentro del plano
-                    if(Vector3.Distance(posInicialVehiculo,randomPosition) > distanciaMinimaAlVehiculo && Mathf.Abs(randomPosition.x) < bordeX && Mathf.Abs(randomPosition.z) < bordeZ)
-                    {
-                        Instantiate(pieza, randomPosition, Quaternion.identity);
-                        contadorPiezasGeneradas++;
-                        listaPosicionesGeneradas.Add(randomPosition);
-                    }
-                    
+                    Instantiate(pieza, randomPosition, Quaternion.identity);
+                    contadorPiezasGeneradas++;
+                    listaPosicionesGeneradas.Add(randomPosition);
                 }
-                
-            
-            
+
+            }
+
+
+
         }
-        
+
     }
 }
