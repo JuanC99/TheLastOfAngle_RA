@@ -25,6 +25,7 @@ public class spawner_controller : MonoBehaviour
     GameObject terreno;
     float bordeX = 0f;
     float bordeZ = 0f;
+    Vector3 origen;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class spawner_controller : MonoBehaviour
         MeshRenderer mr = terreno.GetComponent<MeshRenderer>();
         bordeX = mr.bounds.size.x;
         bordeZ = mr.bounds.size.z;
+        origen = mr.bounds.center;
         //Debug.Log("Borde X : " + bordeX);
         //Debug.Log("Borde Z : " + bordeZ);
 
@@ -43,10 +45,10 @@ public class spawner_controller : MonoBehaviour
 
         //llamamos al metodo para generar las piezas
         //Instantiate(pieza, new Vector3(posInicialVehiculo.x + 5, posInicialVehiculo.y, posInicialVehiculo.z  + 5), Quaternion.identity);
-        generarPiezas(10,2,mr.bounds.center, 15);
+        generarPiezas(10,2, 15);
     }
 
-    public void generarPiezas(int numeroAGenerar, float distanciaMinimaAlVehiculo,Vector3 origen, float radioMaximo)
+    public void generarPiezas(int numeroAGenerar, float distanciaMinimaAlVehiculo, float radioMaximo)
     {
         /*
         

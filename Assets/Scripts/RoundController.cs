@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RoundController : MonoBehaviour
 {
     [SerializeField] private wormLogic wormLogic;
+    [SerializeField] private spawner_controller spawner_Controller;
 
     [Header("Round Settings")]
     [SerializeField] private int maxRounds = 3;
@@ -67,6 +68,7 @@ public class RoundController : MonoBehaviour
     public void StartGame()
     {
         ResetGame();
+        spawner_Controller.generarPiezas(10, 2, 15);
         started = true;
         wormLogic.startedGame = true;
     }
