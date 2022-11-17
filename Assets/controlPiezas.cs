@@ -7,7 +7,7 @@ public class controlPiezas : MonoBehaviour
 {
     GameObject objetoEnColision;
     public Button btnRecoger;
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.name == "Pieza(Clone)")
         {

@@ -7,12 +7,14 @@ public class spawner_controller : MonoBehaviour
 
     public GameObject pieza;
     private List<Vector3> listaPosicionesGeneradas;
+    /*
     [SerializeField]
     int numeroDePiezasAGenerar = 10;
     [SerializeField]
     float distanciaMinimaAlVehiculo = 5;
     [SerializeField]
     float distanciaMinimaEntrePiezas = 5;
+    */
     [SerializeField]
     GameObject vehiculo;
     [SerializeField]
@@ -40,21 +42,30 @@ public class spawner_controller : MonoBehaviour
         listaPosicionesGeneradas = new List<Vector3>();
 
         //llamamos al metodo para generar las piezas
-        Instantiate(pieza, new Vector3(posInicialVehiculo.x + 5, posInicialVehiculo.y, posInicialVehiculo.z  + 5), Quaternion.identity);
-        // generarPiezas(1 , 1, 1, mr.bounds.center, radio);
+        //Instantiate(pieza, new Vector3(posInicialVehiculo.x + 5, posInicialVehiculo.y, posInicialVehiculo.z  + 5), Quaternion.identity);
+        generarPiezas(10,2,mr.bounds.center, 15);
     }
 
-    public void generarPiezas(int numeroAGenerar, float distanciaMinimaAlVehiculo, float distanciaMinimaEntrePiezas, Vector3 origen, float radioMaximo)
+    public void generarPiezas(int numeroAGenerar, float distanciaMinimaAlVehiculo,Vector3 origen, float radioMaximo)
     {
+        /*
+        
+        
         int contadorPiezasGeneradas = 0;
+        int iteraciones = 0;
+        int iteracionesMaximas = 30;
         while (contadorPiezasGeneradas < numeroAGenerar)//comprobamos si ya se han generado todas
         {
+            if (iteraciones >= iteracionesMaximas)
+            {
+                return;
+            }
             Vector3 randomPosition = origen + Random.insideUnitSphere * radioMaximo;//creamos una coordenada random
             randomPosition.y = 0;
 
 
 
-            if (contadorPiezasGeneradas != 0)//comprobamos que no sea la primera
+            if (contadorPiezasGeneradas > 0)//comprobamos que no sea la primera
             {
                 bool estaLejosDeOtrasPiezas = true;
                 foreach (Vector3 pos in listaPosicionesGeneradas)//recorremos la lista de posiciones
@@ -87,8 +98,25 @@ public class spawner_controller : MonoBehaviour
             }
 
 
+            iteraciones++;*/
 
+        int contadorPiezasGeneradas = 0;
+        int iteraciones = 0;
+        int iteracionesMaximas = 30;
+        while (contadorPiezasGeneradas < numeroAGenerar && iteracionesMaximas > iteraciones)
+        {
+            Vector3 randomPosition = origen + Random.insideUnitSphere * radioMaximo;//creamos una coordenada random
+            randomPosition.y = 0;
+            if(Vector3.Distance(posInicialVehiculo,randomPosition) > distanciaMinimaAlVehiculo)
+            {
+                Instantiate(pieza, randomPosition, Quaternion.identity);
+                contadorPiezasGeneradas++;
+            }
+            
+
+            iteraciones++;
         }
+
 
     }
 }
