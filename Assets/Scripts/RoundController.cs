@@ -134,6 +134,7 @@ public class RoundController : MonoBehaviour
     {
         timeToEnd = maxTimePerRound;
         currentItemsRemaining = 0;
+        textPieces.text = "0 / " + itemsRemaining.ToString() + " Piezas";
         gameObjectCoche.transform.position = origenCar;
         gameObjectCoche.GetComponent<ControlVehicle>().SetMovOrigen(origenCar);
         ResetPieces();
