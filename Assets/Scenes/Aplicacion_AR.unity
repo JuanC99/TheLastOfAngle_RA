@@ -8120,7 +8120,7 @@ MonoBehaviour:
   m_Script: {fileID: 422107450, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlaneIndicator: {fileID: 1353731089078378, guid: b9ed12c68682d5b49bfa70ee9d71602d, type: 3}
+  PlaneIndicator: {fileID: 0}
   Height: 1.4
   OnInteractiveHitTest:
     m_PersistentCalls:
@@ -11986,8 +11986,8 @@ MonoBehaviour:
   spawner_Controller: {fileID: 1218457746}
   gameObjectCoche: {fileID: 2136475619}
   maxRounds: 3
-  itemsRemaining: 1
-  maxTimePerRound: 300
+  itemsRemaining: 3
+  maxTimePerRound: 60
   numeroPiezasCrear: 5
   numeroPiezasCrearEntreRondas: 5
   textRounds: {fileID: 598949421}

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 96
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 736
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 97
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 53
+  controlID: 98
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -411,36 +411,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/Sonar
+    - Packages/com.ptc.vuforia.engine/Vuforia/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Materials/Sonar
+  - Packages/com.ptc.vuforia.engine/Vuforia/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\daxte\Desktop\Universidad\TheLastOfAngle_RA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 44650000
-    m_LastClickedID: 25924
-    m_ExpandedIDs: 00000000ca640000cc64000000ca9a3b
+    scrollPos: {x: 0, y: 765}
+    m_SelectedIDs: 86650100
+    m_LastClickedID: 91526
+    m_ExpandedIDs: 00000000ea640000ec640000f464000000650000046500000665000008650000fa890000fc890000068a00000a8a0000e68e000042b9000050b90000886501008a65010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: PantallaMuerte
+      m_OriginalName: PantallaMuerte
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 47450
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -454,7 +454,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ca640000cc640000
+    m_ExpandedIDs: 00000000ea640000ec640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -509,7 +509,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 206
+  m_DirectoriesAreaWidth: 264
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -584,21 +584,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b2a6fbfff0a6fbff5caafbffdaaafbfffcaafbff86c0fbffd6c0fbfff8c0fbff20c1fbff42c1fbff0ec9fbff4cc9fbffb8ccfbff28cdfbff4acdfbffb619fcfff419fcff161afcff3e1afcff601afcff441bfcff821bfcffee1efcff6c1ffcff8e1ffcffa4e3ffffe2e3ffff4ee7ffffcee7fffff0e7ffff9ef8ffff32fbfffffa5e00003a5f0000525f000088950000c2950000da97000086db0000b6dc0000cede0000f8de0000aa4401005e450100a8450100b6450100e245010012470100fa47010024480100ac910100d89101001a94010002c10100
+      m_ExpandedIDs: 1abffeff58bffeff78bffeff9ebffeffbebffeff4ac1feff88c1fefff2c4feff62c5feff82c5feff48d5feff86d5fefff0d8feff60d9feff80d9fefff6f1ffff32f2ffff9ef5ffff12f6ffff34f6ffff32fbffff065f00005e7700005c7800006a78000096780000d2780000d6780000ee780000ba790000d8790000d87a00006c7b0000907b00008c5f010098600100ce6001000a630100048f0100109001004690010082920100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: RawImage
-        m_OriginalName: RawImage
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -272828
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -817,7 +817,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -833,9 +833,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 822.5405, y: 1899.2261, z: 0}
+    m_Target: {x: 367.25, y: 0.75, z: 0}
     speed: 2
-    m_Value: {x: 822.5405, y: 1899.2261, z: 0}
+    m_Value: {x: 367.25, y: 0.75, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -882,17 +882,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.081101984, y: 0.05407018, z: -0.0045108926, w: -0.995319}
+    m_Target: {x: -0.13966383, y: 0.8504722, z: -0.28169414, w: -0.421942}
     speed: 2
-    m_Value: {x: -0.08109463, y: 0.054065272, z: -0.0045104832, w: -0.9952287}
+    m_Value: {x: -0.13965018, y: 0.85038906, z: -0.2816666, w: -0.42190075}
   m_Size:
-    m_Target: 1763.5273
+    m_Target: 12.969181
     speed: 2
-    m_Value: 1763.5273
+    m_Value: 12.969181
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
