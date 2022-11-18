@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1808806, g: 0.22642396, b: 0.3072235, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 11054298}
   - component: {fileID: 11054297}
   - component: {fileID: 11054299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground Plane Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20844571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ruedas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 33520700}
   - component: {fileID: 33520702}
   - component: {fileID: 33520701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda1Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 34915875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 36038368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 56149579}
   - component: {fileID: 56149581}
   - component: {fileID: 56149580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ASiento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57798930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CarModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 118479501}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointWorm
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -1049,6 +1049,79 @@ Transform:
   m_Father: {fileID: 575727058}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &125195446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125195447}
+  - component: {fileID: 125195449}
+  - component: {fileID: 125195448}
+  m_Layer: 0
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &125195447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125195446}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.70710677}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3583785, y: 0.3583785, z: 0.35837844}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 250601781}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &125195448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125195446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 47770329d50a22941bf6df3516d8eb8a, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &125195449
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125195446}
+  m_CullTransparentMesh: 1
 --- !u!1 &152407545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 152407546}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointWorm (3)
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -1073,7 +1146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152407545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.15, y: 0, z: 0}
+  m_LocalPosition: {x: -7.15, y: 0, z: -8.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1404,7 +1477,7 @@ GameObject:
   - component: {fileID: 179603450}
   - component: {fileID: 179603452}
   - component: {fileID: 179603451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Puerta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,6 +1623,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cdeb59a293e324342bc172dc844aec87, type: 3}
       propertyPath: m_Name
       value: rock_largeA
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdeb59a293e324342bc172dc844aec87, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdeb59a293e324342bc172dc844aec87, type: 3}
@@ -1837,7 +1914,7 @@ GameObject:
   - component: {fileID: 220674609}
   - component: {fileID: 220674611}
   - component: {fileID: 220674610}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FX_SMOKE_RIGHT
   m_TagString: FxTemporaire
   m_Icon: {fileID: 0}
@@ -6481,7 +6558,7 @@ GameObject:
   - component: {fileID: 237118736}
   - component: {fileID: 237118738}
   - component: {fileID: 237118737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cofre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6564,7 +6641,7 @@ GameObject:
   - component: {fileID: 241749556}
   - component: {fileID: 241749558}
   - component: {fileID: 241749557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6663,15 +6740,16 @@ RectTransform:
   m_GameObject: {fileID: 250601780}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.70710677}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.136759, y: 1.136759, z: 1.136759}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 125195447}
   m_Father: {fileID: 1145950135}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -377, y: 129}
+  m_AnchoredPosition: {x: -421, y: 135}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250601782
@@ -6686,7 +6764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: cc2bcd3f9e6ae7f48a9a608251b95eb8, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6719,7 +6797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251489346}
   - component: {fileID: 251489347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaCollider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6781,7 +6859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 252217135}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Salpicadero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6817,7 +6895,7 @@ GameObject:
   - component: {fileID: 272209351}
   - component: {fileID: 272209353}
   - component: {fileID: 272209352}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pasted__pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7071,7 +7149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 540, y: 1075.1954}
+  m_AnchoredPosition: {x: 540, y: 1298}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303240828
@@ -7409,7 +7487,7 @@ GameObject:
   - component: {fileID: 358577455}
   - component: {fileID: 358577454}
   - component: {fileID: 358577457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7706,6 +7784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5f93f9106fd71441bb8d6a7c2f001be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5f93f9106fd71441bb8d6a7c2f001be, type: 3}
 --- !u!4 &385278207 stripped
@@ -7728,7 +7810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &412211407
 Transform:
   m_ObjectHideFlags: 0
@@ -7902,7 +7984,7 @@ GameObject:
   - component: {fileID: 440324816}
   - component: {fileID: 440324818}
   - component: {fileID: 440324817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Puerta1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8097,7 +8179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446889875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WheelColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8136,7 +8218,7 @@ GameObject:
   - component: {fileID: 483230068}
   - component: {fileID: 483230070}
   - component: {fileID: 483230069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PaloAntena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8328,7 +8410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &490355441
 Transform:
   m_ObjectHideFlags: 0
@@ -8512,7 +8594,7 @@ GameObject:
   - component: {fileID: 556130407}
   - component: {fileID: 556130409}
   - component: {fileID: 556130408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Antena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8850,7 +8932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 575727058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointsWorm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8874,6 +8956,7 @@ Transform:
   - {fileID: 1474247975}
   - {fileID: 152407546}
   - {fileID: 1320197098}
+  - {fileID: 1414839587}
   m_Father: {fileID: 11054296}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8892,7 +8975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &578028703
 Transform:
   m_ObjectHideFlags: 0
@@ -8910,6 +8993,7 @@ Transform:
   - {fileID: 1885883024}
   - {fileID: 1881660948}
   - {fileID: 1609546675}
+  - {fileID: 965919800}
   m_Father: {fileID: 648112699}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9004,7 +9088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 629055473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9036,7 +9120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 629964598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Salpicadero1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9112,7 +9196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &648112699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9168,7 +9252,7 @@ GameObject:
   - component: {fileID: 658236740}
   - component: {fileID: 658236742}
   - component: {fileID: 658236741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda5Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9329,7 +9413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 721056686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9532,7 +9616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 754898609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9565,7 +9649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 778090197}
   - component: {fileID: 778090198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9865,7 +9949,7 @@ GameObject:
   - component: {fileID: 883204524}
   - component: {fileID: 883204526}
   - component: {fileID: 883204525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Volante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10024,7 +10108,7 @@ GameObject:
   - component: {fileID: 910285505}
   - component: {fileID: 910285507}
   - component: {fileID: 910285506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda3Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10105,7 +10189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 914424472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FX_TURBO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10140,7 +10224,7 @@ GameObject:
   - component: {fileID: 915014151}
   - component: {fileID: 915014153}
   - component: {fileID: 915014152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda2Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10287,6 +10371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock_largeA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdeb59a293e324342bc172dc844aec87, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdeb59a293e324342bc172dc844aec87, type: 3}
 --- !u!4 &919330517 stripped
@@ -10420,6 +10508,153 @@ Transform:
   m_Father: {fileID: 1699395225}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &965919799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965919800}
+  - component: {fileID: 965919804}
+  - component: {fileID: 965919803}
+  - component: {fileID: 965919802}
+  - component: {fileID: 965919801}
+  m_Layer: 5
+  m_Name: BotonSalir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &965919800
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965919799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.9426, y: 4.9426, z: 4.9426}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1765629784}
+  m_Father: {fileID: 578028703}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 540, y: 478}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &965919801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965919799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9ce12b1dae7b54fb0366c003293e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &965919802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965919799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 2
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: 6ccf61ecdea31db43be9c7664cbceaa0, type: 3}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 965919803}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 965919801}
+        m_TargetAssemblyTypeName: ExitScript, Assembly-CSharp
+        m_MethodName: QuitApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &965919803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965919799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7f0058fa3c0e57944a2ade65345efe4e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &965919804
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965919799}
+  m_CullTransparentMesh: 1
 --- !u!1 &969946651
 GameObject:
   m_ObjectHideFlags: 0
@@ -10429,7 +10664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 969946652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10683,7 +10918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035186922}
   - component: {fileID: 1035186923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaCollider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10822,7 +11057,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -10885,7 +11120,7 @@ GameObject:
   - component: {fileID: 1037418996}
   - component: {fileID: 1037418995}
   - component: {fileID: 1037418997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CamaraMapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10923,7 +11158,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 136
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c7dd3dfaa4f9f154b8473f22b4a71949, type: 2}
   m_TargetDisplay: 0
@@ -10963,7 +11198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: cc2bcd3f9e6ae7f48a9a608251b95eb8, type: 2}
-  test: {fileID: 1986934753}
+  target: {fileID: 2136475619}
 --- !u!1 &1083777318
 GameObject:
   m_ObjectHideFlags: 0
@@ -11185,7 +11420,7 @@ GameObject:
   - component: {fileID: 1132606316}
   - component: {fileID: 1132606318}
   - component: {fileID: 1132606317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11272,7 +11507,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1145950135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11407,7 +11642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1180570887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Antena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11490,7 +11725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 12e36b69c5829c843a3f4dcd2e560c4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4e294b74be5e1141ae0b13c18366db1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11518,7 +11753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205502793}
   - component: {fileID: 1205502794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaCollider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11581,7 +11816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218457745}
   - component: {fileID: 1218457746}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11631,7 +11866,7 @@ GameObject:
   - component: {fileID: 1237005358}
   - component: {fileID: 1237005360}
   - component: {fileID: 1237005359}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Palanca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11713,7 +11948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238903355}
   - component: {fileID: 1238903356}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RoundController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11749,9 +11984,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wormLogic: {fileID: 1819326777}
   spawner_Controller: {fileID: 1218457746}
+  gameObjectCoche: {fileID: 2136475619}
   maxRounds: 3
   itemsRemaining: 1
   maxTimePerRound: 300
+  numeroPiezasCrear: 5
+  numeroPiezasCrearEntreRondas: 5
   textRounds: {fileID: 598949421}
   textTimer: {fileID: 697248142}
   textPieces: {fileID: 310084934}
@@ -12047,7 +12285,7 @@ GameObject:
   - component: {fileID: 1261378118}
   - component: {fileID: 1261378120}
   - component: {fileID: 1261378119}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FX_SMOKE_LEFT
   m_TagString: FxTemporaire
   m_Icon: {fileID: 0}
@@ -16847,7 +17085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275061186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16881,7 +17119,7 @@ GameObject:
   - component: {fileID: 1282534478}
   - component: {fileID: 1282534480}
   - component: {fileID: 1282534479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmokeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21426,7 +21664,7 @@ GameObject:
   - component: {fileID: 1290142951}
   - component: {fileID: 1290142950}
   - component: {fileID: 1290142952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CarSonnar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21532,7 +21770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291561750}
   - component: {fileID: 1291561751}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21625,7 +21863,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292012336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21656,7 +21894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303019268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointWorm (1)
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -21689,7 +21927,7 @@ GameObject:
   - component: {fileID: 1303922744}
   - component: {fileID: 1303922746}
   - component: {fileID: 1303922745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21772,7 +22010,7 @@ GameObject:
   - component: {fileID: 1313769236}
   - component: {fileID: 1313769238}
   - component: {fileID: 1313769237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmokeRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26315,7 +26553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1319649196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26347,7 +26585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1320197098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointWorm (4)
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -26362,7 +26600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320197097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.79, y: 0, z: 6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26380,7 +26618,7 @@ GameObject:
   - component: {fileID: 1320494378}
   - component: {fileID: 1320494380}
   - component: {fileID: 1320494379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ASiento1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26701,7 +26939,7 @@ GameObject:
   - component: {fileID: 1349426899}
   - component: {fileID: 1349426901}
   - component: {fileID: 1349426900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26917,7 +27155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371807279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MesaCrafteo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26940,6 +27178,37 @@ Transform:
   m_Father: {fileID: 57798930}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1414839586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1414839587}
+  m_Layer: 7
+  m_Name: PointWorm (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1414839587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414839586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.38, y: 0, z: -7.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 575727058}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1421030015
 GameObject:
   m_ObjectHideFlags: 0
@@ -26949,7 +27218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421030016}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cupula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27059,7 +27328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1451209933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Puertas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27092,7 +27361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1474247975}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PointWorm (2)
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -27188,6 +27457,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c5f93f9106fd71441bb8d6a7c2f001be, type: 3}
       propertyPath: m_Name
       value: rock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5f93f9106fd71441bb8d6a7c2f001be, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5f93f9106fd71441bb8d6a7c2f001be, type: 3}
@@ -27307,7 +27580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1563536886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27344,7 +27617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1584029328
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27377,7 +27650,7 @@ GameObject:
   - component: {fileID: 1588358972}
   - component: {fileID: 1588358974}
   - component: {fileID: 1588358973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Carroceria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27563,7 +27836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 540, y: 1347.5719}
+  m_AnchoredPosition: {x: 540, y: 1552}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1624583877
@@ -27743,7 +28016,7 @@ GameObject:
   - component: {fileID: 1646993550}
   - component: {fileID: 1646993552}
   - component: {fileID: 1646993551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Salpicadero2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28134,7 +28407,7 @@ GameObject:
   - component: {fileID: 1708797449}
   - component: {fileID: 1708797451}
   - component: {fileID: 1708797450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda4Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28206,6 +28479,143 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708797448}
   m_Mesh: {fileID: 7087930542007417086, guid: f92b4bb7415109f48bc5b01cd1ca95e4, type: 3}
+--- !u!1 &1765629783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765629784}
+  - component: {fileID: 1765629786}
+  - component: {fileID: 1765629785}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1765629784
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765629783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 965919800}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1765629785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765629783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Salir
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b68464dd1e5402d4bb0080a704f9237c, type: 2}
+  m_sharedMaterial: {fileID: -4331949552892386899, guid: b68464dd1e5402d4bb0080a704f9237c, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 13
+  m_fontSizeBase: 13
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1765629786
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765629783}
+  m_CullTransparentMesh: 1
 --- !u!1 &1819326771
 GameObject:
   m_ObjectHideFlags: 0
@@ -28220,7 +28630,7 @@ GameObject:
   - component: {fileID: 1819326773}
   - component: {fileID: 1819326776}
   - component: {fileID: 1819326777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ExampleWorm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28315,7 +28725,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -28343,6 +28753,9 @@ MonoBehaviour:
   - {fileID: 118479501}
   - {fileID: 1303019268}
   - {fileID: 1474247975}
+  - {fileID: 152407546}
+  - {fileID: 1320197098}
+  - {fileID: 1414839587}
   goal: {fileID: 118479501}
   roundController: {fileID: 1238903356}
   startedGame: 0
@@ -28729,7 +29142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 540, y: 536.19543}
+  m_AnchoredPosition: {x: 540, y: 732}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881660949
@@ -28935,7 +29348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 540, y: 802.19543}
+  m_AnchoredPosition: {x: 540, y: 1043}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885883025
@@ -29257,7 +29670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939041966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tubos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29291,7 +29704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942437398}
   - component: {fileID: 1942437399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaCollider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29633,7 +30046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1986934754}
   - component: {fileID: 1986934755}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29716,7 +30129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1989604683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Salpicadero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29839,7 +30252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039296144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29906,7 +30319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2069542383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rueda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30015,7 +30428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2112870108}
   - component: {fileID: 2112870109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RuedaCollider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30076,7 +30489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2115556285}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30117,7 +30530,7 @@ GameObject:
   - component: {fileID: 2136475628}
   - component: {fileID: 2136475629}
   - component: {fileID: 2136475630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CarRoot
   m_TagString: Player
   m_Icon: {fileID: 0}

@@ -36,13 +36,13 @@ Material:
     m_Floats:
     - _Mask: 1
     - _MaskHardness: 1
-    - _MaskPower: 50
-    - _MaskRadius: 50
+    - _MaskPower: 20
+    - _MaskRadius: 1
     - _MultiplyBlend: 1
-    - _Power: 0.5
-    - _Speed: 0.5
-    - _Tiling: 0.6
+    - _Power: -20
+    - _Speed: 0.15
+    - _Tiling: 1
     m_Colors:
     - _Colour: {r: 0.6985849, g: 1, b: 0.6650944, a: 1}
-    - _Origin: {r: 373.73492, g: 2.93, b: -2.8655667, a: 0}
+    - _Origin: {r: 372.4615, g: 0.08333338, b: 0.0774343, a: 0}
   m_BuildTextureStacks: []

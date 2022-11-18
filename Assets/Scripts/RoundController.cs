@@ -7,12 +7,14 @@ public class RoundController : MonoBehaviour
 {
     [SerializeField] private wormLogic wormLogic;
     [SerializeField] private spawner_controller spawner_Controller;
+    [SerializeField] private GameObject gameObjectCoche;
 
     [Header("Round Settings")]
     [SerializeField] private int maxRounds = 3;
     [SerializeField] private int itemsRemaining = 5;
     [SerializeField] float maxTimePerRound = 60f * 5f; // 5 minutos
-
+    [SerializeField] int numeroPiezasCrear = 3;
+    [SerializeField] int numeroPiezasCrearEntreRondas = 3;
 
     [Header("Texts Settings")]
     [SerializeField] private Text textRounds;
@@ -30,22 +32,33 @@ public class RoundController : MonoBehaviour
 
     private bool started = false;
     private bool gameCompleted = false;
-
+    private Vector3 origenCar;
 
     void Start()
     {
+        origenCar = gameObjectCoche.transform.position;
         ResetGame();
+
     }
     private void ResetGame()
     {
         timeToEnd = maxTimePerRound;
         currentItemsRemaining = 0;
+        currentRound = 0;
         gameCompleted = false;
         started = false;
         wormLogic.startedGame = false;
         textRounds.text = "Ronda 0 / " + maxRounds.ToString();
         textTimer.text = "00:00";
         textPieces.text = "0 / " + itemsRemaining.ToString() + " Piezas";
+        gameObjectCoche.transform.position = origenCar;
+        gameObjectCoche.GetComponent<ControlVehicle>().SetMovOrigen(origenCar);
+        ResetPieces();
+    }
+    private void ResetPieces()
+    {
+        spawner_Controller.limpiarPiezas();
+        spawner_Controller.generarPiezas(numeroPiezasCrear, 2, 15);
     }
 
     void Update()
@@ -68,7 +81,6 @@ public class RoundController : MonoBehaviour
     public void StartGame()
     {
         ResetGame();
-        spawner_Controller.generarPiezas(10, 2, 15);
         started = true;
         wormLogic.startedGame = true;
     }
@@ -103,8 +115,10 @@ public class RoundController : MonoBehaviour
 
         if (currentItemsRemaining == itemsRemaining)
         {
-            ResetRound();
+            numeroPiezasCrear = +numeroPiezasCrearEntreRondas;
             ChangeRound();
+            ResetRound();
+           
         }
     }
 
@@ -120,6 +134,9 @@ public class RoundController : MonoBehaviour
     {
         timeToEnd = maxTimePerRound;
         currentItemsRemaining = 0;
+        gameObjectCoche.transform.position = origenCar;
+        gameObjectCoche.GetComponent<ControlVehicle>().SetMovOrigen(origenCar);
+        ResetPieces();
     }
 
     // termina la partida
