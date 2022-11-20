@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AaDA/fL/////AAABmW7IHtRxcEs1q/ya8/6vdmpK7raZFVVIUMcXw5/FZbxeu8ba3k6BJCdVWm0esrFKaXuDGbsJqamSpSA1sZBh0lgsIk0qPJBuhZRklQW2LsgE3OHxXHXcFBuC4hwrbO/U7g1l9WfS5z0IxbaL1aggD+xOSkNS4pIevfoFr+y63l6itoFThpdYVWk6jcsEYN7lhwBYF5bexDp+YtaocunliEzpTtS0zFnq+m4gFWvFIN6YAASFoD/WWpWT07nl2kUC1kd2k/JD0BWetz8EvZhW6amMUUOdJbb7lVoa0faMDlnkmLXogZH3JF/rlKsZ/DaAMaYZmUzpWXLa4pUvEvLDYvv42Fl+b9URd3hzScsAgsMp
-    ufoLicenseKey: QVJlTDRqVC8vLy8vQUFBQUtJeXkra2lGYmtjcXVEM2VaNDhqeVVDVUVTd2xJWlViOFIrcUFMdm9vN1gvT1hCWnlMRFhETUt4K3hoZDAzUXdFdHhHUnlzTUVnTWpUQ1B0aFRvWFZyMUR6MDA5NUFob2FvVlR1ckFUNEZsWWlhanUxVGhabUZ4VENwd29aaUNDa0R2eDZFUFFuVWozMXUzWUFwUytHM3IzSGg0L24wMHdkOTI4YU9zcmVhUUpRSjVjczQ0WHZ6NGt5WnI1UWhLMEtscGZiY1FFcXZwT1phMUF1WVlpSVBlUGdrcVZFckQ4MmN5SXBFeUR6QU9TZCtHaldwaXNQR2Ira1hqWG1EL0RSdHNydVlwRkpJMkVTWERtUjZwcVJBSHhwcDMxZkQvRUduWjZESGV6d2dISUdWalBEa29DY2Jrb042ZG00UXdoTkduUFNKVGE2VDlQR0p4aUxGMUdiWndibU10S1BoVmc4Nm10WXNvSk9OMEo=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVI3Sng4UC8vLy8vQUFBQUtOVjVUWEoweEVQR2hmazZKMVBKM3BWQnpiOE8vVDIwMzNLcnhIREJzUUZvTUF4ZThGdnJtY0tjNnNRQUdYYkNZM0wwK1M0dVdPWFZ2VlFQdEZyN0p4eWVzZU55TmpBYjFLT1cvZlJWN3ZoeGpRdDJHNWVIR0I3SHk5MmlJUGxJK0ZUWWViZTNmWVVKdzkwcCtGN0tCcGxTTHJTaHYxWHV1NzFyTGRHVXE3ZjAvK1dBQVZmVDE2RnMweWJ3dU9iODhQanc0TzFCbm8xSzk4MlUvUHU1RTlRSUZRVXgxajY4dTVEZnd3ejVqSjRoYmNlTTZPdUQ3ekErM0IzMWZpK2laNk9ScXNDVnp0L3ppTGtDbmt6cHJrVjFYazc4Sm9vZmhZVkZRcmFHY2YzY2gva1ZyMm1CSnppOGZMZ0VrRTEraFBVS3VSQzJHR2F6aUp4TGd3YzFkSDZjcmQ4SjNkSWJVVCt0Y1lXeWhmWmQ=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -24,7 +24,7 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.10.2
-    eulaAcceptedVersions: '{"Values":["10.10","10.11"]}'
+    eulaAcceptedVersions: '{"Values":["10.10","10.11","8.5","7.1","7.2","7.5","8.1","10.2","10.1","8.3","0.0","7.7","8.0","7.9","8.2","8.4","9.7"]}'
   database:
     disableModelExtraction: 0
   shaders:
